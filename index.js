@@ -31,6 +31,6 @@ server.get('/', (req, res) => {
 })
 
 
-const port = 4000;
+const port = process.env.PORT || 5000;
 server.listen(port, () => 
     console.log(`Running magic on ${port}`));
